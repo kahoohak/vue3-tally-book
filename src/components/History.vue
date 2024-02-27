@@ -6,7 +6,7 @@
         <li :class="transaction.type">
           {{ transaction.title }}
           <span>${{ transaction.amount }}</span>
-          <button class="delete-btn">x</button>
+          <button class="delete-btn" @click="store.removeTransaction(transaction.id)">x</button>
         </li>
       </template>
     </ul>

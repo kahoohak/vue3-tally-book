@@ -26,7 +26,7 @@ const amount = ref(0)
 const stroe = useTransaction()
 
 const handleAdd = () => {
-  stroe.addTransaction(title.value, amount.value)
+  stroe.addTransaction(title.value, Number(amount.value))
 }
 </script>
 
